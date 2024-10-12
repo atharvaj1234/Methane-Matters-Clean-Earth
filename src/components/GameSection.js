@@ -61,26 +61,40 @@ const statements = [
 const questions = [
   {
     question: "How can methane emissions from livestock be reduced?",
-    options: ["Feed them more corn", "Improve their diet", "Let them graze freely"],
+    options: [
+      "Feed them more corn",
+      "Improve their diet",
+      "Let them graze freely",
+    ],
     correct: 1,
   },
   {
     question: "What can be done with methane emissions from landfills?",
-    options: ["Turn it into energy", "Release it into the air", "Bury it underground"],
+    options: [
+      "Turn it into energy",
+      "Release it into the air",
+      "Bury it underground",
+    ],
     correct: 0,
   },
   {
-    question: "Which lighting option helps lower methane emissions from power generation?",
+    question:
+      "Which lighting option helps lower methane emissions from power generation?",
     options: ["LED light bulbs", "Halogen lights", "Incandescent bulbs"],
     correct: 0,
   },
   {
     question: "How can buying locally grown food reduce methane emissions?",
-    options: ["Reduces transportation needs", "Increases packaging", "Requires more refrigeration"],
+    options: [
+      "Reduces transportation needs",
+      "Increases packaging",
+      "Requires more refrigeration",
+    ],
     correct: 0,
   },
   {
-    question: "What is a method for reducing methane emissions from agricultural waste?",
+    question:
+      "What is a method for reducing methane emissions from agricultural waste?",
     options: ["Burn it", "Compost it", "Throw it in landfills"],
     correct: 1,
   },
@@ -91,67 +105,122 @@ const questions = [
   },
   {
     question: "How can methane emissions from rice paddies be reduced?",
-    options: ["Use alternate wetting and drying", "Flood the paddies constantly", "Plant more rice"],
+    options: [
+      "Use alternate wetting and drying",
+      "Flood the paddies constantly",
+      "Plant more rice",
+    ],
     correct: 0,
   },
   {
-    question: "Which dietary change can significantly reduce methane emissions?",
-    options: ["Eat more beef", "Increase dairy consumption", "Switch to plant-based diets"],
+    question:
+      "Which dietary change can significantly reduce methane emissions?",
+    options: [
+      "Eat more beef",
+      "Increase dairy consumption",
+      "Switch to plant-based diets",
+    ],
     correct: 2,
   },
   {
-    question: "What technology can reduce methane emissions from organic waste materials?",
-    options: ["Landfill disposal", "Bioenergy with carbon capture and storage (BECCS)", "Carbon capture"],
+    question:
+      "What technology can reduce methane emissions from organic waste materials?",
+    options: [
+      "Landfill disposal",
+      "Bioenergy with carbon capture and storage (BECCS)",
+      "Carbon capture",
+    ],
     correct: 1,
   },
   {
-    question: "How can using less air conditioning and heating help reduce methane emissions?",
-    options: ["Reduces energy consumption", "Has no effect", "Increases energy use"],
+    question:
+      "How can using less air conditioning and heating help reduce methane emissions?",
+    options: [
+      "Reduces energy consumption",
+      "Has no effect",
+      "Increases energy use",
+    ],
     correct: 0,
   },
   {
     question: "How does reforestation help reduce methane emissions?",
-    options: ["By using fertilizers", "By cutting down trees", "By capturing methane in the atmosphere"],
+    options: [
+      "By using fertilizers",
+      "By cutting down trees",
+      "By capturing methane in the atmosphere",
+    ],
     correct: 2,
   },
   {
-    question: "How can urban waste management improvements help reduce methane emissions?",
-    options: ["Ignore waste", "Improve organic waste disposal", "Build more landfills"],
+    question:
+      "How can urban waste management improvements help reduce methane emissions?",
+    options: [
+      "Ignore waste",
+      "Improve organic waste disposal",
+      "Build more landfills",
+    ],
     correct: 1,
   },
   {
-    question: "What can wastewater treatment plants install to reduce methane emissions?",
+    question:
+      "What can wastewater treatment plants install to reduce methane emissions?",
     options: ["Methane-capture systems", "Incinerators", "Water filters"],
     correct: 0,
   },
   {
     question: "Which farming practice helps reduce methane emissions?",
-    options: ["Sustainable farming practices", "Monocropping", "Increase chemical fertilizers"],
+    options: [
+      "Sustainable farming practices",
+      "Monocropping",
+      "Increase chemical fertilizers",
+    ],
     correct: 0,
   },
   {
     question: "How can retrofitting buildings help reduce methane emissions?",
-    options: ["Add more windows", "Increase insulation", "Make them more energy-efficient"],
+    options: [
+      "Add more windows",
+      "Increase insulation",
+      "Make them more energy-efficient",
+    ],
     correct: 2,
   },
   {
     question: "How can oil and gas companies reduce methane emissions?",
-    options: ["Increase gas extraction", "Monitor and report leaks", "Ignore methane leaks"],
+    options: [
+      "Increase gas extraction",
+      "Monitor and report leaks",
+      "Ignore methane leaks",
+    ],
     correct: 1,
   },
   {
-    question: "Which farming practice can reduce methane emissions from agriculture?",
-    options: ["Use more synthetic fertilizers", "Conventional plowing", "Regenerative farming"],
+    question:
+      "Which farming practice can reduce methane emissions from agriculture?",
+    options: [
+      "Use more synthetic fertilizers",
+      "Conventional plowing",
+      "Regenerative farming",
+    ],
     correct: 2,
   },
   {
     question: "How can the use of electric vehicles reduce methane emissions?",
-    options: ["Reduce fossil fuel combustion", "Increase gas station demand", "Increase fuel consumption"],
+    options: [
+      "Reduce fossil fuel combustion",
+      "Increase gas station demand",
+      "Increase fuel consumption",
+    ],
     correct: 0,
   },
   {
-    question: "What farming practice helps reduce methane emissions from soil disturbance?",
-    options: ["Burn the crops", "Use no-till farming", "Plow the fields constantly"],
+    question:
+      "What farming practice helps reduce methane emissions from soil disturbance?",
+    options: [
+      "Burn the crops",
+      "Use no-till farming",
+      "Plow the fields constantly",
+    ],
     correct: 1,
   },
   {
@@ -160,7 +229,6 @@ const questions = [
     correct: 2,
   },
 ];
-
 
 const GameSection = ({ onClose }) => {
   const [currentStatement, setCurrentStatement] = useState(0);
@@ -203,18 +271,20 @@ const GameSection = ({ onClose }) => {
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage: `url(${land})`,
-            maskImage: 'linear-gradient(to bottom, black 80%, rgb(132 204 22) 100%)',
-            WebkitMaskImage: 'linear-gradient(to bottom, black 80%, rgb(132 204 22) 100%)'
+            maskImage:
+              "linear-gradient(to bottom, black 80%, rgb(132 204 22) 100%)",
+            WebkitMaskImage:
+              "linear-gradient(to bottom, black 80%, rgb(132 204 22) 100%)",
           }}
         >
           {/* Garbage */}
-          <div className="absolute bottom-0 left-0 right-0 flex flex-wrap justify-start p-4 min-h-[450px]">
+          <div className="absolute bottom-0 left-0 right-0 flex flex-wrap justify-start p-4 min-h-[350px]">
             {[...Array(garbageCount)].map((_, idx) => (
               <img
                 key={idx}
                 src={garbage[idx]}
                 alt="Garbage"
-                className="w-[200px] h-[200px] m-1"
+                className="w-[150px] h-[150px] m-1"
               />
             ))}
           </div>
@@ -222,14 +292,23 @@ const GameSection = ({ onClose }) => {
       </div>
 
       {/* Game content section (40% of screen height) */}
-      <div className="absolute z-20 right-5 top-5 bg-red-500 pl-5 pr-5 pt-3 pb-3 rounded-3xl text-white cursor-pointer" onClick={() => onClose()}>X</div>
+      <div
+        className="absolute z-20 right-5 top-5 bg-red-500 pl-5 pr-5 pt-3 pb-3 rounded-3xl text-white cursor-pointer"
+        onClick={() => onClose()}
+      >
+        X
+      </div>
       <div className="flex-grow flex justify-center bg-gradient-to-b from-[#60cd1c] to-green-500 p-4 z-10">
         <div className="bg-gray-700 min-w-[1280px] rounded-lg shadow-md p-4 mt-[-2rem]">
           {!gameFinished && !userFailed && !userWin ? (
             <>
               {/* Display Hint */}
-              <div className="mb-8 p-4 bg-gray-600 text-xl text-center text-white rounded">
+              {/* <div className="mb-8 p-4 bg-gray-600 text-xl text-center text-white rounded">
                 <p>For each question, choose the option that best reflects your daily actions. <br/>Correct answers will help reduce the garbage in our illustrated landscape, while incorrect answers will add to it.<br/> Let's see how your choices impact the environment!</p>
+              </div> */}
+
+              <div className="mb-6 p-3 bg-gray-600 text-lg text-center text-white rounded">
+                <p>Hint: {statements[currentStatement]}</p>
               </div>
 
               {/* Display Question */}
@@ -256,14 +335,13 @@ const GameSection = ({ onClose }) => {
                   </button>
                 ))}
               </div>
-              <div className="mt-8 mr-2 ml-2 p-3 bg-gray-600 text-lg text-center text-white rounded">
-                <p>Hint: {statements[currentStatement]}</p>
-              </div>
             </>
           ) : gameFinished ? (
-            <div className="text-center text-white"> 
+            <div className="text-center text-white">
               <h2 className="text-3xl font-bold mb-4">Game Over!</h2>
-              <p>Your score: {score}/{questions.length}</p>
+              <p>
+                Your score: {score}/{questions.length}
+              </p>
               <p>Garbage remaining: {garbageCount}</p>
             </div>
           ) : userWin ? (
