@@ -6,6 +6,7 @@ import GameSection from "./GameSection";
 
 const HeroSection = () => {
   const [sliderPosition, setSliderPosition] = useState(17.34);
+  // eslint-disable-next-line
   const [currentView, setCurrentView] = useState("hero");
   const [playGameClicked, setPlayGameClicked] = useState(false);
   const containerRef = useRef(null);
