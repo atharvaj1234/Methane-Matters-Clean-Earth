@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Methane-Matters-Clean-Earth/static/css/main.5cd18418.css",
-    "main.js": "/Methane-Matters-Clean-Earth/static/js/main.5bdca21c.js",
+    "main.js": "/Methane-Matters-Clean-Earth/static/js/main.2de2a13c.js",
     "static/js/453.be5756b5.chunk.js": "/Methane-Matters-Clean-Earth/static/js/453.be5756b5.chunk.js",
     "static/media/slide1.png": "/Methane-Matters-Clean-Earth/static/media/slide1.82578cfbd25af8470a31.png",
     "static/media/slide2.png": "/Methane-Matters-Clean-Earth/static/media/slide2.846aa7024c6d7133fc7a.png",
@@ -13,11 +13,11 @@
     "static/media/5.webp": "/Methane-Matters-Clean-Earth/static/media/5.e3edb802822a9331ccc3.webp",
     "index.html": "/Methane-Matters-Clean-Earth/index.html",
     "main.5cd18418.css.map": "/Methane-Matters-Clean-Earth/static/css/main.5cd18418.css.map",
-    "main.5bdca21c.js.map": "/Methane-Matters-Clean-Earth/static/js/main.5bdca21c.js.map",
+    "main.2de2a13c.js.map": "/Methane-Matters-Clean-Earth/static/js/main.2de2a13c.js.map",
     "453.be5756b5.chunk.js.map": "/Methane-Matters-Clean-Earth/static/js/453.be5756b5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5cd18418.css",
-    "static/js/main.5bdca21c.js"
+    "static/js/main.2de2a13c.js"
   ]
 }
