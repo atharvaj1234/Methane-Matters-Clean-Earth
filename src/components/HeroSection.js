@@ -63,7 +63,7 @@ const HeroSection = () => {
       ></div>
 
       {/* Hero Section */}
-      <section id="hero" className="h-screen w-full snap-start relative">
+      <section id="hero" className="h-[100vh] w-full snap-start relative">
         <div
           className="slider-container relative w-full h-full overflow-hidden z-10"
           onMouseMove={handleMouseMove}
@@ -83,7 +83,7 @@ const HeroSection = () => {
             className="absolute top-0 h-full bg-gray-800"
             style={{ left: `${sliderPosition}%`, width: "3px" }}
           />
-          <div className="absolute bottom-0 w-full text-center text-white pb-8">
+          <div className="absolute bottom-8 md:bottom-0 w-full text-center text-white pb-8">
             <h1 className="text-4xl md:text-5xl font-bold quicksand tracking-wide">
               Clean vs. Polluted Earth
             </h1>
@@ -95,7 +95,7 @@ const HeroSection = () => {
       </section>
 
       {/* Overlay Section */}
-      <section id="overlay" className="h-screen w-full snap-start relative">
+      <section id="overlay" className="h-[100vh] w-full snap-start relative">
         <div className="absolute inset-0 flex flex-col items-center justify-center text-white py-8 px-4 md:py-24 md:px-8 z-20">
           <div className="max-w-5xl text-center space-y-4 md:space-y-8">
             <h2 className="text-2xl md:text-5xl font-extrabold mb-2 md:mb-8 leading-tight animate-pulse">
@@ -116,7 +116,7 @@ const HeroSection = () => {
             </p>
             <div className="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-8">
               <center>
-                <div className="bg-white bg-opacity-20 p-3 md:p-6 rounded-lg shadow-lg max-w-xs">
+                <div className="bg-white bg-opacity-20 p-2 md:p-6 rounded-lg shadow-lg max-w-xs">
                   <h3 className="text-base md:text-xl font-semibold mb-1 md:mb-2">
                     Reduce Food Waste
                   </h3>
@@ -127,7 +127,7 @@ const HeroSection = () => {
                 </div>
               </center>{" "}
               <center>
-                <div className="bg-white bg-opacity-20 p-3 md:p-6 rounded-lg shadow-lg max-w-xs">
+                <div className="bg-white bg-opacity-20 p-2 md:p-6 rounded-lg shadow-lg max-w-xs">
                   <h3 className="text-base md:text-xl font-semibold mb-1 md:mb-2">
                     Support Clean Energy
                   </h3>
@@ -138,7 +138,7 @@ const HeroSection = () => {
                 </div>
               </center>{" "}
               <center>
-                <div className="bg-white bg-opacity-20 p-3 md:p-6 rounded-lg shadow-lg max-w-xs">
+                <div className="bg-white bg-opacity-20 p-2 md:p-6 rounded-lg shadow-lg max-w-xs">
                   <h3 className="text-base md:text-xl font-semibold mb-1 md:mb-2">
                     Recycle Responsibly
                   </h3>
@@ -149,7 +149,7 @@ const HeroSection = () => {
                 </div>
               </center>
             </div>
-            <p className="text-sm md:text-lg mt-4 md:mt-8 italic">
+            <p className="text-xs md:text-lg mt-4 md:mt-8 italic">
               Imagine a world where waste is transformed into resources,
               renewable energy powers our lives, and the air is clean. This
               isn't just a dream—it's achievable. But it requires all of us to
@@ -163,17 +163,17 @@ const HeroSection = () => {
       </section>
 
       {/* Stats Section */}
-      <section id="stats" className="h-screen w-full snap-start relative">
+      <section id="stats" className="h-[100vh] w-full snap-start relative">
         <div
           className={`absolute inset-0 flex flex-col justify-center text-white py-8 px-4 md:py-24 md:px-8 z-30 transition-all duration-700 ease-in-out ${
             playGameClicked ? "transform -translate-y-full opacity-0" : ""
           }`}
         >
-          <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 text-center mb-8 md:mb-12">
+          <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 text-center mb-4 md:mb-12">
             {/* Statistic Cards */}
             <div className="bg-white text-gray-900 rounded-lg shadow-lg p-4 md:p-8 transform transition duration-500 hover:scale-105">
-              <FaRecycle className="text-4xl md:text-6xl mx-auto text-green-500 mb-2 md:mb-4" />
-              <h2 className="text-lg md:text-2xl font-semibold mb-1 md:mb-2">
+              <FaRecycle className="text-2xl md:text-6xl mx-auto text-green-500 mb-2 md:mb-4" />
+              <h2 className="text-base md:text-2xl font-semibold mb-1 md:mb-2">
                 30% Waste Reduction
               </h2>
               <p className="text-xs md:text-md font-light">
@@ -184,8 +184,8 @@ const HeroSection = () => {
               </p>
             </div>
             <div className="bg-white text-gray-900 rounded-lg shadow-lg p-4 md:p-8 transform transition duration-500 hover:scale-105">
-              <FaLeaf className="text-4xl md:text-6xl mx-auto text-green-500 mb-2 md:mb-4" />
-              <h2 className="text-lg md:text-2xl font-semibold mb-1 md:mb-2">
+              <FaLeaf className="text-2xl md:text-6xl mx-auto text-green-500 mb-2 md:mb-4" />
+              <h2 className="text-base md:text-2xl font-semibold mb-1 md:mb-2">
                 50% Renewable Energy
               </h2>
               <p className="text-xs md:text-md font-light">
@@ -196,8 +196,8 @@ const HeroSection = () => {
               </p>
             </div>
             <div className="bg-white text-gray-900 rounded-lg shadow-lg p-4 md:p-8 transform transition duration-500 hover:scale-105">
-              <FaChartLine className="text-4xl md:text-6xl mx-auto text-green-500 mb-2 md:mb-4" />
-              <h2 className="text-lg md:text-2xl font-semibold mb-1 md:mb-2">
+              <FaChartLine className="text-2xl md:text-6xl mx-auto text-green-500 mb-2 md:mb-4" />
+              <h2 className="text-base md:text-2xl font-semibold mb-1 md:mb-2">
                 20% Emissions Cut
               </h2>
               <p className="text-xs md:text-md font-light">
@@ -214,10 +214,10 @@ const HeroSection = () => {
               playGameClicked ? "transform translate-y-full opacity-0" : ""
             }`}
           >
-            <h2 className="text-2xl md:text-4xl font-bold mb-2 md:mb-4 quicksand">
+            <h2 className="text-xl md:text-4xl font-bold mb-2 md:mb-4 quicksand">
               Take Action, Save the Planet!
             </h2>
-            <p className="text-sm md:text-lg font-light mb-4 md:mb-6">
+            <p className="text-xs md:text-lg font-light mb-4 md:mb-6">
               We have created a small game which will help you learn simple yet
               powerful actions we can take to reduce methane emissions.
             </p>
