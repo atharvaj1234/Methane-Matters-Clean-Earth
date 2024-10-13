@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# Methane Matters: Clean Earth 🌍
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Methane Matters** is an interactive, educational web application designed to raise awareness about methane emissions and the actions we can take to reduce them. The site features engaging sections, informative content, and a fun game to help users learn more about how everyday choices can positively impact our planet.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Hero Section**: Compare a polluted Earth with a clean Earth using a slider to visualize the impact of methane emissions.
+- **Educational Overlay**: Learn about methane emissions, their global effects, and how we can reduce them.
+- **Statistic Cards**: Interactive cards provide key stats on waste reduction, renewable energy, and emission cuts.
+- **Interactive Game**: A fun game that challenges users to clean up the Earth by answering questions related to daily habits. Correct answers reduce garbage on the planet, while incorrect answers increase pollution.
 
-### `npm start`
+## Live Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+[Insert link to live demo if hosted]
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tech Stack
 
-### `npm test`
+- **Frontend**: ReactJS
+- **CSS Framework**: TailwindCSS
+- **Icons**: React Icons
+- **Images**: Custom assets
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+1. **Clone the repository**:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   git clone https://github.com/your-username/methane-matters-clean-earth.git
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Navigate to the project directory**:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   cd methane-matters-clean-earth
+   ```
 
-### `npm run eject`
+3. **Install dependencies**:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   npm install
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. **Run the development server**:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+   npm start
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   The application will be available at `http://localhost:3000`.
 
-## Learn More
+## How to Play the Game
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. **Learn and Prepare**: First, you'll be presented with helpful tips on reducing methane emissions. These tips will help you prepare for the questions ahead.
+2. **Answer Questions**: You'll face questions about everyday habits that affect methane emissions.
+3. **Impact the Earth**: For each correct answer, you'll reduce garbage and clean the environment. Incorrect answers will add more pollution. 
+4. **Finish the Game**: If you clean up all the garbage, you win! If not, you can try again.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
 
-### Code Splitting
+This project is licensed under the MIT License.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Contributing
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+We welcome contributions! If you have suggestions for improvement or want to report an issue, feel free to open a pull request or submit an issue.
