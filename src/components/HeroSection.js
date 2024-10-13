@@ -39,14 +39,14 @@ const HeroSection = () => {
   };
 
   const handlePlayGameClick = () => {
-    const isAndroid = /Android/i.test(navigator.userAgent);
+    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
   
-    if (isAndroid) {
-      alert("The game is not supported on Android devices.");
+    if (isMobile) {
+      alert("The game is not supported on mobile devices.");
     } else {
       setPlayGameClicked(true);
     }
-  };
+  };  
 
   return (
     <div

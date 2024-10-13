@@ -263,6 +263,17 @@ const GameSection = ({ onClose }) => {
     }, 1000);
   };
 
+  const handleReplay = () => {
+    setGameFinished(false);
+    setUserFailed(false);
+    setUserWin(false);
+    setGarbageCount(9);
+    setUserAnswer(null);
+    setScore(0);
+    setCurrentStatement(0);
+    setCurrentQuestion(0);
+  };
+
   return (
     <div className="h-screen w-full flex flex-col">
       {/* Land section (60% of screen height) */}
@@ -338,22 +349,50 @@ const GameSection = ({ onClose }) => {
             </>
           ) : gameFinished ? (
             <div className="text-center text-white">
-              <h2 className="text-3xl font-bold mb-4">Game Over!</h2>
-              <p>
-                Your score: {score}/{questions.length}
+              <h2 className="text-4xl font-bold mb-6">
+                Well Done on Your Effort to Clean Up!
+              </h2>
+              <p className="text-lg">
+                You worked hard, but there's still some garbage left to clean.
               </p>
-              <p>Garbage remaining: {garbageCount}</p>
+              <p className="text-xl mt-4 font-semibold">
+                Garbage Remaining: {garbageCount}
+              </p>
             </div>
           ) : userWin ? (
             <div className="text-center text-white">
-              <p className="font-semibold">Yay!! You cleaned the GreenLand</p>
+              <h2 className="text-4xl font-bold mb-6">Congratulations! 🌍</h2>
+              <p className="text-lg font-semibold">
+                You successfully cleaned up the Greenland!
+              </p>
+              <p className="text-md mt-4">
+                The planet is healthier thanks to your correct answers and
+                efforts.
+              </p>
             </div>
           ) : (
             <div className="text-center text-white">
-              <p className="font-semibold">
-                Game Over!! You Polluted the whole GreenLand
+              <h2 className="text-4xl font-bold mb-6">Game Over</h2>
+              <p className="text-lg font-semibold">
+                Oh no! You polluted the entire Greenland!
+              </p>
+              <p className="text-md mt-4">
+                Try again to learn how your choices can make a difference for
+                the planet.
               </p>
             </div>
+          )}
+          {gameFinished || userFailed || userWin ? (
+            <center>
+            <button
+              onClick={handleReplay}
+              className="mt-6 bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 text-white py-3 px-8 rounded-full text-lg font-semibold shadow-lg transform transition-all duration-300 hover:scale-105 hover:bg-gradient-to-l focus:outline-none focus:ring-4 focus:ring-blue-300"
+            >
+              Replay Game
+            </button>
+            </center>
+          ) : (
+            <></>
           )}
         </div>
       </div>
